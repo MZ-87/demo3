@@ -30,6 +30,8 @@
     background-color: rgb(68, 128, 0);
 }
 
+.main{display:contents;}
+
 .content-1 {
     grid-area: cont-1;
     background-color: rgb(141, 173, 233);
