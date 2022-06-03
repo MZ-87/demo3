@@ -1,0 +1,52 @@
+.grid {
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    grid-template-areas:
+        "hd hd hd hd"
+        "sb-left cont-1 cont-3 sb-right"
+        "sb-left cont-1 cont-3 sb-right"
+        "sb-left cont-2 cont-3 sb-right"
+        "sb-left cont-2 cont-3 sb-right"
+        "ft ft ft ft";
+
+    grid-template-columns: 1fr 2fr 3fr 1fr;
+    grid-template-rows: 15% repeat(4, 1fr) 10%;
+    gap: 1%;
+}
+
+.header {
+    grid-area: hd;
+    background-color: yellow;
+}
+
+.side-bar-left {
+    grid-area: sb-left;
+    background-color: green;
+}
+
+.side-bar-right {
+    grid-area: sb-right;
+    background-color: rgb(68, 128, 0);
+}
+
+.content-1 {
+    grid-area: cont-1;
+    background-color: rgb(141, 173, 233);
+}
+
+.content-2 {
+    grid-area: cont-2;
+    background-color: rgb(173, 109, 179);
+}
+
+.content-3 {
+    grid-area: cont-3;
+    background-color: rgb(211, 152, 64);
+}
+
+.footer {
+    grid-area: ft;
+    background-color: aqua;
+}
+
